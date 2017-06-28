@@ -1,0 +1,6 @@
+{
+  "name": "maiano-webapp",
+  "dependencies": {
+    "markdown-it": "^8.3.1"
+  }
+}
