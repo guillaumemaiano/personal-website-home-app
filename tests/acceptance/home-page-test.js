@@ -31,6 +31,15 @@ test('Should list family members', function(assert) {
     );
 });
 
+// test fav news
+test('Should display the current favorite news', function(assert) {
+    visit('/');
+    andThen( function() {
+      assert.equal(find('.favNews').length, 1, 'should see one favorite news');
+    }
+    );
+});
+
 // test private area (admin + photo libraries?)
 test('Should link to the private areas', function(assert) {
     visit('/');
