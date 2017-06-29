@@ -23,7 +23,11 @@ module.exports = function(environment) {
     },
     i18n: {
         defaultLocale:'en'
-    }   
+    },
+    moment: {
+          includeLocales: ['en', 'fr'],
+          allowEmpty: true // default: false
+              }
   };
 
   if (environment === 'development') {

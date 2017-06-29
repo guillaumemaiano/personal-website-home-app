@@ -5,8 +5,13 @@
                 {{#link-to 'index' class ="navbar-brand text-capitalize"}}
                 <em>{{t "home"}}</em>
                 {{/link-to}}
+                <button type="button" class="navbar-toggle" data-toggle="collapse" onclick={{action 'navBarClicked' value='target'}}>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
             </div>
-            <div class="collapse navbar-collapse" onclick={{action 'navBarClicked' value='target'}}>
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="links">
                         {{#link-to 'news' class='col-lg-4 col-md-4 col-sm-4'}}
@@ -17,10 +22,11 @@
                         {{/link-to}}
                     </li>
                 </ul>
-                <div class="nav navbar-nav navbar-right">
-                    I should show here!
-                    {{#link-to 'login'}}tttttt<span class="glyphicon glyphicon-log-in">Login</span>{{/link-to}}
-                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        {{#link-to 'private' class='text-right'}}<span class="glyphicon glyphicon-log-in text-capitalize"> {{t 'login'}}</span>{{/link-to}}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

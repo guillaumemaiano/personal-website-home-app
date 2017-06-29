@@ -4,3 +4,10 @@
 float: none;
 margin: 0 auto;
 }
+.published-date {
+    color: cadetblue;
+}
+.news-container {
+    
+    background-color:bisque;
+}

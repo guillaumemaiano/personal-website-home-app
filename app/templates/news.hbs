@@ -1,5 +1,18 @@
-<div class="news-containeri">
-<div class="row">
-{{outlet}}
-</div>
+<div class="news-container">
+    {{#each model as |news|}}
+    <article class="row">
+        <h3>{{news.title}}</h3>
+        {{outlet}}
+        <div class="row">
+        <em><span class="col-lg-06 col-md-6 col-sm-6 col-xs-12">{{news.abstract}}</span></em>
+        
+            <span class='published-date col-lg-4 col-md-4 col-sm-4 col-sm-offset-2'>{{t 'published-on'}} {{news.date}}</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12 col-sm-offset-1">
+            {{news.content}}
+            </div>
+        </div>
+    </article>
+    {{/each}}
 </div>
