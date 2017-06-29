@@ -25,7 +25,7 @@ module.exports = function(environment) {
         defaultLocale:'en'
     },
     moment: {
-          includeLocales: ['en', 'fr'],
+          includeLocales: ['fr'],
           allowEmpty: true // default: false
               }
   };
