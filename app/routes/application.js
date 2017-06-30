@@ -2,7 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     i18n: Ember.inject.service(),
-    afterModel: function(user) {
+    moment: Ember.inject.service(),
+    afterModel: function() {
 
         // based on Angular code
         let getFirstBrowserLanguage = function () {
@@ -45,5 +46,6 @@ export default Ember.Route.extend({
         };
         
         this.set('i18n.locale', getUserLang());
+        this.get('moment').setLocale(getUserLang());
     }
 });

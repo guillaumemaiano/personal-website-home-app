@@ -3,5 +3,5 @@ export default {
  "news": "nouvelles",
  "private": "privé",
  "login": "me connecter",
- "published-on": "Published on: ",
+ "published-on": "Publié le: ",
 };
