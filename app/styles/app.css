@@ -19,12 +19,20 @@ margin: 0 auto;
 }
 
 .news-container > article img:hover {
-    border: 5pt dashed blueviolet;
+    border: 5pt dashed darkcyan;
+}
+
+.links:hover {
+    background-color: darkcyan;
 }
 
 .hidden {
     display:none;
 }
+
 .debug {
     background-color: rebeccapurple;
+}
+.debug-opposite {
+    background-color: coral;
 }

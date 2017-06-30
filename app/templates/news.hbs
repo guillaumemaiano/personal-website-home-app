@@ -12,10 +12,12 @@
             {{news.content}}
             {{outlet}}
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2  hidden-xs hidden-sm">
-                 <img src="{{news.image}}" alt="{{t 'context_pic'}} {{news.abstract}}">
-                {{outlet}}
+            {{#if news.image}}
+            <div class="col-lg-2 col-md-2 col-sm-2  hidden-xs hidden-sm {{unless news.image "hidden"}}">
+                <!-- I'd like to inject an alt="{{t 'context_pic'}} {{news.abstract}}" -->
+                {{light-box href=news.image data-lightbox="cat-1" data-title=news.abstract}}
             </div>
+            {{/if}}
         </div>
     </article>
     {{/each}}
