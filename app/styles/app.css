@@ -11,3 +11,20 @@ margin: 0 auto;
     
     background-color:bisque;
 }
+
+.news-container > article img {
+    
+    max-height: 250pt;
+    max-width: 100%;
+}
+
+.news-container > article img:hover {
+    border: 5pt dashed blueviolet;
+}
+
+.hidden {
+    display:none;
+}
+.debug {
+    background-color: rebeccapurple;
+}
