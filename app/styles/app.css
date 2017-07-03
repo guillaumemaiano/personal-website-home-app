@@ -30,9 +30,35 @@ margin: 0 auto;
     display:none;
 }
 
+.widescreen {
+    
+}
+
 .debug {
     background-color: rebeccapurple;
 }
 .debug-opposite {
     background-color: coral;
+}
+
+.news-spotlight h3 {
+    /*
+    breaks ember's css
+    position:absolute;
+    -> switch to ember-overlays
+    */
+    color: whitesmoke;
+    padding: 6pt;
+    opacity: .7;
+    background-color: black;
+}
+
+.news-abstract {
+    background-color: black;
+    padding: 6pt;
+    opacity: .7;
+}
+.news-spotlight img {
+    max-width: 95%;
+    max-height: 600pt;
 }
