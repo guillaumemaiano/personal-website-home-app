@@ -1,13 +1,13 @@
 <div class="index-page">
-<h3>TODO</h3>
 <div class="row">
-<h4>- Show favorite news</h4>
-        {{news-spotlight news=model}}
+    <h2><span class="glyphicon glyphicon-heart"></span>{{t "we-like"}}<span class="glyphicon glyphicon-heart"></span> </h2>
+        {{news-spotlight news=model.spotlightnews}}
 </div>
 <div class="row">
-<h4>
-- Show family members
-</h4>
+    <h2><span class="glyphicon glyphicon-user"></span>{{t "our-pages"}}<span class="glyphicon glyphicon-user"></span> </h2>
+    {{#each model.memberlist as |member|}}
+        {{member-spotlight name=member.name image=member.image url=member.url even=model.isEven}}
+    {{/each}}
 </div>
 </div>
 {{outlet}}

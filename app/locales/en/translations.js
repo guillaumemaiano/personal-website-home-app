@@ -5,4 +5,6 @@ export default {
  "login": "login",
  "published-on": "Published on: ",
  "context_pic": "A picture about the article: ",
+ "we-like": "We like",
+ "our-pages": "Profiles",
 };

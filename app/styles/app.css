@@ -41,6 +41,11 @@ margin: 0 auto;
     background-color: coral;
 }
 
+.news-spotlight {
+    background-color: lightgoldenrodyellow;
+    border-radius: 5pt;
+    padding: 10pt;
+}
 .news-spotlight h3 {
     /*
     breaks ember's css
@@ -51,12 +56,25 @@ margin: 0 auto;
     padding: 6pt;
     opacity: .7;
     background-color: black;
+    top: 70pt;
+    max-width: 40%;
+    position: relative;
 }
 
 .news-abstract {
     background-color: black;
     padding: 6pt;
     opacity: .7;
+}
+
+.news-date {
+    color: whitesmoke;
+    padding: 6pt;
+    opacity: .7;
+    background-color: black;
+    top: 70pt;
+    max-width: 20%;
+    position: relative;
 }
 .news-spotlight img {
     max-width: 95%;

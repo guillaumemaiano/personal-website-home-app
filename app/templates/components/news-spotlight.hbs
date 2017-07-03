@@ -1,10 +1,13 @@
-<article class="jumbotron news-spotlight">
+<article class="news-spotlight">
     {{#link-to 'news'}}
-    <img src="{{news.image}}" alt="{{t imgalt}} {{news.abstract}}">
-    <h3>{{news.title}}</h3>
-    <div class="news-abstract">
-        {{news.abstract}}
-    </div>
+    {{#mark-overlay id=news.id}}
+        <h3>{{news.title}}</h3>
+        <div class="news-date">{{moment-format news.date 'LL'}}</div>
+        <img src="{{news.image}}" alt="{{t imgalt}} {{news.abstract}}">
+    {{/mark-overlay}}
+    {{#overlay-marks as |mark|}}
+    {{create-overlay at=mark label=news.abstract class="news-abstract" hoverable=true }}
+    {{/overlay-marks}}
     {{/link-to}}
     
 </article>
